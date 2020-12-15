@@ -1,0 +1,349 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 1350px;
+}
+
+body {
+    background-color: #deb887;
+    font-family: 'Tajawal', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: darkred;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.9em;
+    line-height: 45px;
+    margin-left: 20px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.5em;
+
+    }
+    #about{
+        float: right;
+        width: 67%;
+    }
+@media (max-width: 700px) {
+        #logo {
+            margin-top: 15px;
+            width: 100%;
+            font-size: 1.1em;
+        }
+    #about{
+        float: right;
+        width: 100%;
+    }
+    }}
+    #about{
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    #about >a{color: black;
+        transition: color .3s linear;}
+    #about >a:hover{color: cadetblue;
+    text-decoration: underline;
+        }
+    #about >a{margin-right: 5%;}
+.fixed {
+    z-index: 5000;
+    background-color: #666666;
+    border-bottom: 1px solid silver;
+}
+header.fixed #logo{
+    color:  darkred;
+}
+.fixed #about a{color: black }
+.fixed #about a:hover{color: #7c7c7c }
+
+#top{
+    width: 100%;
+    height: 550px;
+    background-image:url("images/back2.jpg") ;
+    background-blend-mode: multiply;
+    background-color: #475b66;
+    background-size: cover;
+
+    text-align: center;
+    color: #a09022;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media (min-width: 1001px) {
+    #top{
+font-size: 3.0em;
+    }}
+
+@media (max-width: 1000px) and (min-width: 651px){
+    #top{
+font-size: 2.5em;
+    }
+
+}
+@media (max-width: 650px) {
+    #top{
+font-size: 1.5em;
+    }
+
+}
+#top h1{
+    padding-top: 20%;
+}
+#main{
+    padding: 50px 20%;
+    width: 60%;
+    float: left;
+    background-color: #827e7e;
+    border-top: 2px solid silver;
+    color: #473d3d;
+    font-size: 1.3em;
+}
+@media (min-width:1401px ) {
+#main{
+    padding: 100px 20%;
+    width: 60%;
+}
+}
+@media (max-width:1400px ) {
+#main{
+    padding: 100px 10%;
+    width: 80%;
+}
+}
+@media(max-width: 700px) {
+    #main div{
+        width: 98%!important;
+    }
+
+}
+#main div{
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+}
+#main h2{font-size: 1.8em;
+    font-family: 'IBM Plex Sans', sans-serif;}
+#main span{ color: #d2d2d2;
+    font-family: 'Tajawal', sans-serif;
+font-size: 1.2em;}
+
+#overview {
+    float: left;
+    background-image: url("php_test/styles/fon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    padding: 30px 0px;
+    width: 100%;
+    text-align: center;
+    color: #d9d9d9;
+}
+#overview .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+    margin-left: 160px;
+
+}
+#overview img{
+    background: #fafafa;
+    padding: 0;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+
+}
+#overview span{
+    float: left;
+    width: 100%;
+    font-size:1.3em;
+    margin-top: 5px;
+
+}
+@media (max-width: 700px) {
+    #overview .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+/*________________________________________________
+
+                    GRAVEL
+
+--------------------------------------------------- */
+.name_gravel{
+    width: 100%;
+font-size: 2.0em;
+    text-align: center;
+    color: #a09022;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+
+}
+.name_gravel h1{
+    padding-top: 5px;
+    color:  darkred;
+
+}
+
+.gravel_title{
+    width: 98%;
+    height: 550px;
+    background-image: url("images/gravel_fon.jpg");
+    background-blend-mode: multiply;
+    background-color: #9aa7af;
+    background-size: cover;
+    background-position: center;
+    margin-left: 1%;
+
+}
+.gravel_title span{
+    float: left;
+    color: white;
+    font-size: 2.5em;
+    padding-top: 32%;
+    padding-left: 100px;
+    font-family: 'Goldman', cursive;
+
+}
+.gravel_main{
+    float: left;
+    width: 80%;
+    height: 2700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    background-color: #eee8e8;
+}
+.gravel_text span{
+    float: left;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.oglav {
+    width: 100%;
+    color: darkred;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.1em;
+}
+.oglav span {
+    padding-left: 50px;
+}
+.img_text img{
+    height: 350px;
+   padding-left: 50px;
+    float: left;
+}
+.img_text {
+    width: 100%;
+    font-family: 'Tajawal', sans-serif;
+}
+.img_text span {
+    width: 50%;
+    text-align: justify;
+padding-left: 20px;
+}
+
+.perehod {
+    float: right;
+margin-top: 30px;
+    height: 100px;
+    background-color: #a8a8a3;
+border-left: solid darkred;
+}
+.perehod span{
+float: right;
+    font-family: "Berlin Sans FB";
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.perehod a{
+float: right;
+    font-size: 0.8em;
+    color: darkred;
+}
+.oglav2 {
+    width: 100%;
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: darkred;
+}
+.part2 span{
+    padding-left: 20px;
+text-align: justify;
+    margin-right: 20px;
+}
+.part2 ul{
+   float: left;
+    padding-left: 40px;
+
+}
+.part3{
+    width: 100%;
+}
+.img1 img{
+    float: left;
+    width: 60%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-left: 4.5%;
+}
+.img2 img{
+    float: left;
+    width: 25%;
+    padding-bottom: 5px;
+    padding-top: 30px;
+
+}
+.img_all{
+    background-color: burlywood;
+padding-bottom: 20px;
+    float: left;
+}
+.part3{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.part3 ul{
+    width: 50%;
+
+    padding-left: 20px;
+    line-height: 40px;
+}
+.part3 img{
+    float: right;
+    width: 50%;
+    margin-right: 50px;
+    padding-top: 20px;
+}

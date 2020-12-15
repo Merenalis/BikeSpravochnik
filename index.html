@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>BikeSpravochnik</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>BikeSpravochnik</span>
+    </div>
+    <div id="about" >
+        <a href="index.html" title="Главная" >Главная</a>
+        <a href="php_test/test.php" title="Регистрация" >Регистрация</a>
+        <a href="#" title="О себе" >О себе</a>
+    </div>
+</header>
+
+<div id="top">
+      <H1>For cyclists from a cyclist!</H1>
+  </div>
+  <div id="main">
+      <div class="intro">
+          <h2>I will help you understand everything in this topic
+          </h2>
+      </div>
+      <div class="text">
+          <span>Various information on various topics. Everything you need is categorized by topic and section at the top of the page.
+          </span>
+      </div>
+  </div>
+  <div id="overview">
+      <div class="img">
+          <img src="images/gravel.jpg"alt="gravel">
+         <span>  <a href="gravel.html" title="Everything about gravel">Everything about gravel</a></span>
+      </div>
+      <div class="img">
+          <img src="images/cannondale.jpeg" alt="cannondale">
+          <span>History of Cannondale</span>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      function slowScroll(id) {
+      $('html,body').animate({
+  scrollTop:$(id).offset().top
+  },500);
+      }
+      $(document).on("scroll",function () {
+  if ($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+  else
+      $("header").attr("class","fixed");
+      });
+  </script>
+  <body>
+  </body>
+  </html>
